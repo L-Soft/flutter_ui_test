@@ -96,9 +96,11 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             onTap: () {
+              print('menuItem.id: ${menuItem.id}');
               if (menuItem.id == 1) {
-                print('menuItem.id: ${menuItem.id}');
                 Navigator.pushNamed(context, '/user_info');
+              } else if (menuItem.id == 2) {
+                Navigator.pushNamed(context, '/model_bottom');
               }
             },
           );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/presentation/page/main_screen.dart';
+import 'package:ui_app/presentation/page/model_bottom.dart';
 import 'package:ui_app/presentation/page/splash_screen.dart';
 import 'package:ui_app/presentation/page/user_info_screen.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => SplashScreen(),
         '/main': (context) => MainScreen(),
         '/user_info': (context) => UserInfoScreen(),
+        '/model_bottom': (context) => ModelBottom(),
       },
     );
   }

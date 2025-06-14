@@ -46,7 +46,6 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
               ),
             );
           }
-
           return _listItem((snapshot.data ?? []));
         },
       ),
