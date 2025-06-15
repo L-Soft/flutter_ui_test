@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_app/presentation/page/dribbble_design_01.dart';
 import 'package:ui_app/presentation/page/main_screen.dart';
 import 'package:ui_app/presentation/page/model_bottom.dart';
 import 'package:ui_app/presentation/page/splash_screen.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/main': (context) => MainScreen(),
         '/user_info': (context) => UserInfoScreen(),
         '/model_bottom': (context) => ModelBottom(),
+        '/dribbble_design_01': (context) => DribbbleDesign01(),
       },
     );
   }

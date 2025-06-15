@@ -94,6 +94,7 @@ class _ModelBottomState extends State<ModelBottom> {
               child: ElevatedButton(
                 onPressed: () {
                   showModalBottomSheet(
+                    sheetAnimationStyle: animationStyle,
                     backgroundColor: Colors.transparent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
@@ -112,10 +113,11 @@ class _ModelBottomState extends State<ModelBottom> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Expanded(
                                   child: Container(
-                                    height: 50,
+                                    height: 30,
                                     decoration: ShapeDecoration(
                                       color: Colors.white,
                                       shape: RoundedRectangleBorder(
@@ -128,7 +130,7 @@ class _ModelBottomState extends State<ModelBottom> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    height: 50,
+                                    height: 30,
                                     decoration: ShapeDecoration(
                                       color: Colors.white,
                                       shape: RoundedRectangleBorder(
@@ -138,7 +140,7 @@ class _ModelBottomState extends State<ModelBottom> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    height: 50,
+                                    height: 30,
                                     decoration: ShapeDecoration(
                                       color: Colors.white,
                                       shape: RoundedRectangleBorder(
@@ -150,20 +152,26 @@ class _ModelBottomState extends State<ModelBottom> {
                                   ),
                                 ),
                                 Expanded(
-                                  child: Container(
-                                    height: 50,
-                                    margin: EdgeInsets.only(left: 5, right: 5),
-                                    child: ElevatedButton(
-                                      child: const Text('X'),
-                                      onPressed: () {
-                                        Navigator.pop(context);
-                                      },
+                                  child: GestureDetector(
+                                    child: Container(
+                                      width: 50,
+                                      height: 50,
+                                      // margin: EdgeInsets.only(left: 5, right: 5),
+                                      decoration: ShapeDecoration(
+                                        color: Colors.white,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.all(Radius.circular(50)),
+                                        ),
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.pop(context);
+                                    },
                                   ),
                                 ),
                                 Expanded(
                                   child: Container(
-                                    height: 50,
+                                    height: 30,
                                     decoration: ShapeDecoration(
                                       color: Colors.white,
                                       shape: RoundedRectangleBorder(
@@ -176,7 +184,7 @@ class _ModelBottomState extends State<ModelBottom> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    height: 50,
+                                    height: 30,
                                     decoration: ShapeDecoration(
                                       color: Colors.white,
                                       shape: RoundedRectangleBorder(
@@ -186,7 +194,7 @@ class _ModelBottomState extends State<ModelBottom> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    height: 50,
+                                    height: 30,
                                     decoration: ShapeDecoration(
                                       color: Colors.white,
                                       shape: RoundedRectangleBorder(
@@ -198,6 +206,66 @@ class _ModelBottomState extends State<ModelBottom> {
                                   ),
                                 ),
                               ],
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    height: 30,
+                                    decoration: ShapeDecoration(
+                                      color: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                    height: 30,
+                                    decoration: ShapeDecoration(
+                                      color: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(20),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                    height: 30,
+                                    decoration: ShapeDecoration(
+                                      color: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(20),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                    height: 30,
+                                    decoration: ShapeDecoration(
+                                      color: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 30,
+                                decoration: ShapeDecoration(
+                                  color: Colors.white,
+                                  shape: RoundedRectangleBorder(
+                                  ),
+                                ),
+                              ),
                             ),
                           ],
                         ),

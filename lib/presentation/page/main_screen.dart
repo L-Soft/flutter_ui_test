@@ -101,6 +101,8 @@ class _MainScreenState extends State<MainScreen> {
                 Navigator.pushNamed(context, '/user_info');
               } else if (menuItem.id == 2) {
                 Navigator.pushNamed(context, '/model_bottom');
+              } else if (menuItem.id == 3) {
+                Navigator.pushNamed(context, '/dribbble_design_01');
               }
             },
           );
