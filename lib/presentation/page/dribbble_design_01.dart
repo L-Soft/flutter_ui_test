@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../util/emoticon_face.dart';
+
 class DribbbleDesign01 extends StatefulWidget {
   const DribbbleDesign01({super.key});
 
@@ -54,6 +56,107 @@ class _DribbbleDesign01State extends State<DribbbleDesign01> {
                       ),
                       padding: EdgeInsets.all(12),
                       child: Icon(Icons.notifications, color: Colors.white),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue[600],
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: EdgeInsets.all(12),
+                  child: Row(
+                    children: [
+                      Icon(Icons.search, color: Colors.white),
+                      SizedBox(width: 5),
+                      Text(
+                        '검색',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'Pretendard',
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      '기분이 어때?',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontFamily: 'Pretendard',
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    Icon(Icons.more_horiz, color: Colors.white),
+                  ],
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        EmoticonFace(emoticonFace: '🦀'),
+                        SizedBox(height: 8),
+                        Text(
+                          '나쁨',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        EmoticonFace(emoticonFace: '✅'),
+                        SizedBox(height: 8),
+                        Text(
+                          '좋음',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        EmoticonFace(emoticonFace: '💡'),
+                        SizedBox(height: 8),
+                        Text(
+                          '울음',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        EmoticonFace(emoticonFace: '✨'),
+                        SizedBox(height: 8),
+                        Text(
+                          '짜증',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
