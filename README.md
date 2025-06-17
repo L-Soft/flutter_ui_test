@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+1. 레이아웃 빌드: https://codelabs.developers.google.com/codelabs/flutter-animated-responsive-layout?hl=ko#3
