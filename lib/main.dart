@@ -5,6 +5,7 @@ import 'package:ui_app/presentation/page/main_screen.dart';
 import 'package:ui_app/presentation/page/model_bottom.dart';
 import 'package:ui_app/presentation/page/splash_screen.dart';
 import 'package:ui_app/presentation/page/user_info_screen.dart';
+import 'package:ui_app/presentation/page/web_view_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/model_bottom': (context) => ModelBottom(),
         '/dribbble_design_01': (context) => DribbbleDesign01(),
         '/layout_build': (context) => LayoutBuild(),
+        '/web_view_page': (context) => WebViewPage(),
       },
     );
   }

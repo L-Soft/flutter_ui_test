@@ -105,6 +105,8 @@ class _MainScreenState extends State<MainScreen> {
                 Navigator.pushNamed(context, '/dribbble_design_01');
               } else if (menuItem.id == 4) {
                 Navigator.pushNamed(context, '/layout_build');
+              } else if (menuItem.id == 5) {
+                Navigator.pushNamed(context, '/web_view_page');
               }
             },
           );
