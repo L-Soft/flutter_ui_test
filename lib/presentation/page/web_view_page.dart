@@ -5,6 +5,7 @@ import 'package:webview_flutter_android/webview_flutter_android.dart';
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
 class WebViewPage extends StatelessWidget {
+  // WidgetsFlutterBinding.ensureInitialized();
   WebViewPage({super.key});
 
   WebViewController webViewController = WebViewController()
@@ -26,6 +27,16 @@ class WebViewPage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {
+              webViewController.loadRequest(
+                Uri.parse('https://tanklove.tistory.com'),
+              );
+            },
+            icon: Icon(Icons.home),
+          ),
+        ],
       ),
       body: WebViewWidget(controller: webViewController),
     );
